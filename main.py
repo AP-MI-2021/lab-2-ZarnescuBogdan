@@ -28,8 +28,7 @@ def is_palindrome(n) -> bool:
     n1 = 0
     n2 = n
     while n2:
-        n1 = n1 * 10
-        n1 = n1 + n2 % 10
+        n1 = n1 * 10 + n2 % 10
         n2 = n2 // 10
     if n1 == n:
         return True
